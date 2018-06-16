@@ -1,0 +1,272 @@
+///// MAIN 
+
+.main {
+    width: 75%;
+    margin: 10rem  auto;
+    background-color: var(--main-bg-color);
+    border-radius: .5rem;
+    box-shadow: -13px 24px 102px -15px rgba(0,0,0,0.35);
+}
+
+
+///// INFO 
+
+.info {
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    width: 70%;
+    margin: 8rem auto;
+    
+    &__location {
+        margin: 7rem auto 3rem;
+        font-size: 4rem;
+        height: 15rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        line-height: 5.5rem;
+        padding-top: 5rem;
+        
+        a {
+          text-decoration: none;
+          color: var(--body-bg-color);
+        }
+    }
+}
+
+
+///// CONTAINER 
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    padding-bottom: 12rem;
+}
+
+
+.details, 
+.contact {
+    margin: 4rem 2rem;
+    border-radius: .3rem;
+    padding: 3rem 2rem;
+    box-shadow: -8px 13px 74px -1px gray;
+}
+
+
+///// DETAILS 
+
+.details {
+    flex: 1;
+    background: var(--header-bg-color);
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        align-items: center;
+    }
+    
+    &__item {
+        flex-basis: 50%;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    
+    &__item::before {
+        content: "* ";
+        color: var(--body-bg-color);
+    }
+}
+
+
+///// CONTACT
+
+.contact {
+    flex: 1;
+    background: var(--header-bg-color);
+    
+    &__h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding-left: 4rem;
+        margin-top: 5rem;
+    }
+    
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 1rem;
+    }
+    
+    &__info a {
+        margin: 1rem;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 2.2rem;
+    }
+    
+    &__info a:link {
+        color: black;
+    }
+    
+    &__info a:active {
+        color: var(--body-bg-color);
+    }
+}
+
+
+///// MEDIA QUERIES
+
+
+@media( max-width: 1435px ) {
+    .main {
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 0; 
+  }
+    
+    .details {
+        padding: 2rem;
+        
+        &__list {
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            padding-left: 4rem;
+        }
+    }
+}
+
+@media( max-width: 1140px ) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .details {
+        margin: 4rem auto;
+        width: 70%;
+        height: 45rem;
+        min-width: 708px;
+        
+        ul {
+            justify-content: space-around;
+        }
+        
+        li {
+            font-size: 3rem;
+            flex-basis: 40%;
+      }
+    }
+    
+    .contact {
+        width: 70%;
+        margin: 4rem auto;
+        height: 45rem;
+        min-width: 708px;
+        
+        &__info {
+             align-items: center;
+             padding: 0;
+        }
+        
+        &__h1 {
+            margin-top: 7.5rem;
+        }
+    }
+}
+
+
+@media( max-width: 815px ) {
+    .details,
+    .contact {
+        padding: 0;
+        margin: 2rem auto;
+        width: 80%;
+        min-width: auto;
+    }
+    
+    .details {
+        height: 88rem;
+        
+        ul {
+            flex-direction: column;
+            padding: 0;
+        }
+    }
+    
+}
+
+
+@media( max-width: 700px ) {
+    .info {
+        
+        &__location {
+            height: 300px;
+        }
+    }
+    
+}
+
+
+@media( max-width: 620px ) {
+    .info {
+        font-size: 2.5rem;
+        width: 90%;
+        
+    &__location {
+        line-height: 5rem;
+        font-size: 3rem;
+    }   
+  }
+    
+    .contact,
+    .details {
+        width: 96%;
+    }
+    
+    .contact {
+        height: 50rem;
+        
+        &__info {
+            margin-top: 0;
+            
+            a {
+                display: flex;
+                flex-direction: column;
+                font-size: 1.8rem;
+                margin: 2rem auto;
+            }
+            
+            img {
+                height: 5rem;
+                width: 5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        &__h1 {
+            margin: 4rem auto 2rem;
+        }
+    }
+}
+    
+
+    
+
+
+
+
+
+
+
