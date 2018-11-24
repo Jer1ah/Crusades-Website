@@ -136,9 +136,35 @@ html, body {
 .info__location h3 {
   margin-top: 0;
 }
-.info__location h4 {
-  margin: 1.5rem 0;
+.info__speakers h1 {
+  font-size: 5rem;
+  margin-top: 10rem;
+}
+.info__speakers h3 {
+  font-size: 3.5rem;
+  margin-top: 8rem;
+  border-bottom: solid 2px black;
+  display: inline-block;
+}
+.info__speakers .first {
+  margin-top: 4rem;
+}
+.info__speakers h4 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+.info__speakers b {
   font-size: 3rem;
+}
+.info__speakers span {
+  font-size: 2rem;
+}
+.info__about h1 {
+  font-size: 5rem;
+  margin: 10rem 0 4rem;
+}
+.info__about p {
+  font-size: 2.3rem;
 }
 
 .container {
@@ -278,6 +304,10 @@ html, body {
     flex-direction: column;
     padding: 0;
   }
+
+  .info {
+    width: 90%;
+  }
 }
 @media (max-width: 727px) {
   .info {
@@ -297,6 +327,18 @@ html, body {
   .info__location {
     line-height: 5rem;
     font-size: 3rem;
+  }
+  .info__about h1 {
+    font-size: 3.3rem;
+  }
+  .info__about p {
+    width: 100%;
+  }
+  .info__speakers h3 {
+    font-size: 2.8rem;
+  }
+  .info__speakers .first {
+    margin-top: 5rem;
   }
 
   .contact,
@@ -325,9 +367,22 @@ html, body {
     margin: 4rem auto 2rem;
   }
 }
-@media (max-width: 530px) {
-  .info h4 {
-    font-size: 2.1rem;
+@media (max-width: 550px) {
+  .info {
+    width: 100%;
+  }
+  .info__speakers {
+    width: 97%;
+    margin: auto;
+  }
+  .info__speakers b {
+    font-size: 2.4rem;
+  }
+  .info__speakers h4 {
+    font-size: 2rem;
+  }
+  .info__speakers span {
+    font-size: 1.8rem;
   }
 }
 
