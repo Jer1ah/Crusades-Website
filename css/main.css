@@ -136,6 +136,10 @@ html, body {
 .info__location h3 {
   margin-top: 0;
 }
+.info__location h5 {
+  text-decoration: underline;
+  margin: 0 auto 5rem;
+}
 .info__speakers h1 {
   font-size: 5rem;
   margin-top: 10rem;
